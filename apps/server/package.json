@@ -1,0 +1,22 @@
+{
+  "name": "@next-pathe/server",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "bun run --watch --hot src/index.ts",
+    "biome:check": "biome check",
+    "biome:lint": "biome lint",
+    "biome:fix": "biome format --write"
+  },
+  "dependencies": {
+    "@better-fetch/fetch": "^1.1.18",
+    "@better-fetch/logger": "^1.1.18",
+    "@elysiajs/cors": "^1.3.3",
+    "@elysiajs/openapi": "^1.3.11",
+    "@elysiajs/static": "^1.3.0",
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}

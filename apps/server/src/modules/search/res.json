@@ -1,0 +1,354 @@
+[
+  {
+    "type": "show",
+    "slug": "demon-slayer-kimetsu-no-yaiba-infinity-castle-47320",
+    "title": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
+    "poster": {
+      "lg": "https://media.pathe.nl/movie/alex/HO00002700/poster/lg/46/movie&uuid=7EA0652C-D9EE-4D04-81D4-8CCECE2DEF9A",
+      "md": "https://media.pathe.nl/movie/alex/HO00002700/poster/md/46/movie&uuid=7EA0652C-D9EE-4D04-81D4-8CCECE2DEF9A"
+    },
+    "backdrop": {
+      "lg": "https://media.pathe.nl/movie/mx/47320/lg/66/media",
+      "md": "https://media.pathe.nl/movie/mx/47320/md/66/media",
+      "sm": "https://media.pathe.nl/movie/mx/47320/sm/66/media"
+    },
+    "isMovie": false,
+    "url": "https://www.pathe.nl/redirect/nl/show/slug/demon-slayer-kimetsu-no-yaiba-infinity-castle-47320",
+    "eventType": null,
+    "tag": null,
+    "contentRating": "-12 jaar",
+    "contentRatingRef": "-12ans",
+    "warning": null,
+    "id": "HO00002700",
+    "genres": [],
+    "duration": 155,
+    "isNew": true,
+    "internalId": 47320,
+    "release": {
+      "NL_NL": "2025-09-11"
+    },
+    "rating": {
+      "ref": "-12ans",
+      "description": "-12 jaar",
+      "extendedDescription": "Jonger dan 12 jaar? Dan alleen toegang onder begeleiding van een volwassene."
+    },
+    "cinechecks": [
+      {
+        "ref": "vio",
+        "description": "Geweld"
+      }
+    ],
+    "topic": null,
+    "content": null,
+    "published": null,
+    "publicationDate": "2025-09-11T17:54:52+02:00",
+    "urlSlug": null,
+    "originalRelease": null
+  },
+  {
+    "type": "show",
+    "slug": "demon-slayer-english-subtitles-41244",
+    "title": "Demon Slayer (English Subtitles)",
+    "poster": null,
+    "backdrop": null,
+    "isMovie": false,
+    "url": "https://www.pathe.nl/redirect/nl/show/slug/demon-slayer-english-subtitles-41244",
+    "eventType": null,
+    "tag": null,
+    "contentRating": "-12 jaar",
+    "contentRatingRef": "-12ans",
+    "warning": null,
+    "id": "HO00000404",
+    "genres": ["Animatie"],
+    "duration": 117,
+    "isNew": false,
+    "internalId": 41244,
+    "release": {
+      "NL_NL": "2021-06-10"
+    },
+    "rating": {
+      "ref": "-12ans",
+      "description": "-12 jaar",
+      "extendedDescription": "Jonger dan 12 jaar? Dan alleen toegang onder begeleiding van een volwassene."
+    },
+    "cinechecks": [],
+    "topic": null,
+    "content": null,
+    "published": null,
+    "publicationDate": "2025-09-11T17:54:52+02:00",
+    "urlSlug": null,
+    "originalRelease": null
+  },
+  {
+    "type": "show",
+    "slug": "demon-slayer-mugen-train-41658",
+    "title": "Demon Slayer: Mugen Train",
+    "poster": null,
+    "backdrop": null,
+    "isMovie": false,
+    "url": "https://www.pathe.nl/redirect/nl/show/slug/demon-slayer-mugen-train-41658",
+    "eventType": null,
+    "tag": null,
+    "contentRating": "-12 jaar",
+    "contentRatingRef": "-12ans",
+    "warning": null,
+    "id": "HO00000360",
+    "genres": ["Animatie"],
+    "duration": 117,
+    "isNew": false,
+    "internalId": 41658,
+    "release": {
+      "NL_NL": "2021-06-10"
+    },
+    "rating": {
+      "ref": "-12ans",
+      "description": "-12 jaar",
+      "extendedDescription": "Jonger dan 12 jaar? Dan alleen toegang onder begeleiding van een volwassene."
+    },
+    "cinechecks": [],
+    "topic": null,
+    "content": null,
+    "published": null,
+    "publicationDate": "2025-09-11T17:54:52+02:00",
+    "urlSlug": null,
+    "originalRelease": null
+  },
+  {
+    "type": "show",
+    "slug": "demon-slayer-to-the-swordsmith-village-41987",
+    "title": "Demon Slayer: To The Swordsmith Village",
+    "poster": null,
+    "backdrop": null,
+    "isMovie": false,
+    "url": "https://www.pathe.nl/redirect/nl/show/slug/demon-slayer-to-the-swordsmith-village-41987",
+    "eventType": null,
+    "tag": null,
+    "contentRating": "-12 jaar",
+    "contentRatingRef": "-12ans",
+    "warning": null,
+    "id": "HO00001275",
+    "genres": ["Animatie"],
+    "duration": 110,
+    "isNew": false,
+    "internalId": 41987,
+    "release": {
+      "NL_NL": "2023-03-09"
+    },
+    "rating": {
+      "ref": "-12ans",
+      "description": "-12 jaar",
+      "extendedDescription": "Jonger dan 12 jaar? Dan alleen toegang onder begeleiding van een volwassene."
+    },
+    "cinechecks": [
+      {
+        "ref": "vio",
+        "description": "Geweld"
+      }
+    ],
+    "topic": null,
+    "content": null,
+    "published": null,
+    "publicationDate": "2025-09-11T17:54:52+02:00",
+    "urlSlug": null,
+    "originalRelease": null
+  },
+  {
+    "type": "show",
+    "slug": "demon-slayer-kimetsu-no-yaiba-to-the-hashira-tra-37884",
+    "title": "Demon Slayer: Kimetsu no Yaiba -To the Hashira Tra",
+    "poster": {
+      "lg": "https://media.pathe.nl/movie/alex/HO00001735/poster/lg/24/movie&uuid=CA4A6607-1C21-400A-8E00-02DBD919FDCE",
+      "md": "https://media.pathe.nl/movie/alex/HO00001735/poster/md/24/movie&uuid=CA4A6607-1C21-400A-8E00-02DBD919FDCE"
+    },
+    "backdrop": {
+      "lg": "https://media.pathe.nl/movie/mx/37884/lg/26/media",
+      "md": "https://media.pathe.nl/movie/mx/37884/md/26/media",
+      "sm": "https://media.pathe.nl/movie/mx/37884/sm/26/media"
+    },
+    "isMovie": false,
+    "url": "https://www.pathe.nl/redirect/nl/show/slug/demon-slayer-kimetsu-no-yaiba-to-the-hashira-tra-37884",
+    "eventType": null,
+    "tag": null,
+    "contentRating": "-12 jaar",
+    "contentRatingRef": "-12ans",
+    "warning": null,
+    "id": "HO00001735",
+    "genres": ["Animatie"],
+    "duration": 105,
+    "isNew": false,
+    "internalId": 37884,
+    "release": {
+      "NL_NL": "2024-02-22"
+    },
+    "rating": {
+      "ref": "-12ans",
+      "description": "-12 jaar",
+      "extendedDescription": "Jonger dan 12 jaar? Dan alleen toegang onder begeleiding van een volwassene."
+    },
+    "cinechecks": [
+      {
+        "ref": "vio",
+        "description": "Geweld"
+      },
+      {
+        "ref": "language",
+        "description": "Grof taalgebruik"
+      }
+    ],
+    "topic": null,
+    "content": null,
+    "published": null,
+    "publicationDate": "2025-09-11T17:54:52+02:00",
+    "urlSlug": null,
+    "originalRelease": null
+  },
+  {
+    "type": "show",
+    "slug": "creation-of-the-gods-ii-demon-force-44200",
+    "title": "CREATION OF THE GODS II: Demon Force",
+    "poster": {
+      "lg": "https://media.pathe.nl/movie/alex/HO00002366/poster/lg/3/movie&uuid=5FEF54C2-81EC-4A65-A419-1E60134ECD1A",
+      "md": "https://media.pathe.nl/movie/alex/HO00002366/poster/md/3/movie&uuid=5FEF54C2-81EC-4A65-A419-1E60134ECD1A"
+    },
+    "backdrop": null,
+    "isMovie": false,
+    "url": "https://www.pathe.nl/redirect/nl/show/slug/creation-of-the-gods-ii-demon-force-44200",
+    "eventType": null,
+    "tag": null,
+    "contentRating": "-9 jaar",
+    "contentRatingRef": "-9ans",
+    "warning": null,
+    "id": "HO00002366",
+    "genres": ["Actie", "Fantasie"],
+    "duration": 146,
+    "isNew": false,
+    "internalId": 44200,
+    "release": {
+      "NL_NL": "2025-01-31"
+    },
+    "rating": {
+      "ref": "-9ans",
+      "description": "-9 jaar",
+      "extendedDescription": "Jonger dan 9 jaar? Dan alleen toegang onder begeleiding van een volwassene."
+    },
+    "cinechecks": [],
+    "topic": null,
+    "content": null,
+    "published": null,
+    "publicationDate": "2025-09-11T17:54:52+02:00",
+    "urlSlug": null,
+    "originalRelease": null
+  },
+  {
+    "type": "show",
+    "slug": "sweeney-todd-the-demon-barber-of-fleet-street-42165",
+    "title": "Sweeney Todd: The Demon Barber of Fleet Street",
+    "poster": {
+      "lg": "https://media.pathe.nl/movie/alex/HO00002101/poster/lg/2/movie&uuid=F6A2D4AC-3324-4B35-AE30-7679B14B8986",
+      "md": "https://media.pathe.nl/movie/alex/HO00002101/poster/md/2/movie&uuid=F6A2D4AC-3324-4B35-AE30-7679B14B8986"
+    },
+    "backdrop": null,
+    "isMovie": false,
+    "url": "https://www.pathe.nl/redirect/nl/show/slug/sweeney-todd-the-demon-barber-of-fleet-street-42165",
+    "eventType": null,
+    "tag": null,
+    "contentRating": "-16 jaar",
+    "contentRatingRef": "-16ans",
+    "warning": null,
+    "id": "HO00002101",
+    "genres": ["Horror", "Misdaad"],
+    "duration": 116,
+    "isNew": false,
+    "internalId": 42165,
+    "release": {
+      "NL_NL": "2024-09-12"
+    },
+    "rating": {
+      "ref": "-16ans",
+      "description": "-16 jaar",
+      "extendedDescription": "Jonger dan 16? Dan geen toegang, ook niet onder begeleiding van een volwassene. Ter controle kan om legitimatie worden gevraagd."
+    },
+    "cinechecks": [],
+    "topic": null,
+    "content": null,
+    "published": null,
+    "publicationDate": "2025-09-11T17:54:52+02:00",
+    "urlSlug": null,
+    "originalRelease": null
+  },
+  {
+    "type": "show",
+    "slug": "invisible-demons-41578",
+    "title": "Invisible Demons",
+    "poster": null,
+    "backdrop": null,
+    "isMovie": false,
+    "url": "https://www.pathe.nl/redirect/nl/show/slug/invisible-demons-41578",
+    "eventType": null,
+    "tag": null,
+    "contentRating": "-9 jaar",
+    "contentRatingRef": "-9ans",
+    "warning": null,
+    "id": "HO00000788",
+    "genres": ["Documentaire"],
+    "duration": 70,
+    "isNew": false,
+    "internalId": 41578,
+    "release": {
+      "NL_NL": "2022-05-26"
+    },
+    "rating": {
+      "ref": "-9ans",
+      "description": "-9 jaar",
+      "extendedDescription": "Jonger dan 9 jaar? Dan alleen toegang onder begeleiding van een volwassene."
+    },
+    "cinechecks": [],
+    "topic": null,
+    "content": null,
+    "published": null,
+    "publicationDate": "2025-09-11T17:54:52+02:00",
+    "urlSlug": null,
+    "originalRelease": null
+  },
+  {
+    "type": "show",
+    "slug": "nightwatch-demons-are-forever-40142",
+    "title": "Nightwatch - Demons Are Forever",
+    "poster": {
+      "lg": "https://media.pathe.nl/movie/alex/HO00001967/poster/lg/99/movie&uuid=B5F37D3D-0C4F-48FA-BF69-F46C08C011DE",
+      "md": "https://media.pathe.nl/movie/alex/HO00001967/poster/md/99/movie&uuid=B5F37D3D-0C4F-48FA-BF69-F46C08C011DE"
+    },
+    "backdrop": {
+      "lg": "https://media.pathe.nl/movie/mx/40142/lg/50/media",
+      "md": "https://media.pathe.nl/movie/mx/40142/md/50/media",
+      "sm": "https://media.pathe.nl/movie/mx/40142/sm/50/media"
+    },
+    "isMovie": false,
+    "url": "https://www.pathe.nl/redirect/nl/show/slug/nightwatch-demons-are-forever-40142",
+    "eventType": null,
+    "tag": null,
+    "contentRating": "-16 jaar",
+    "contentRatingRef": "-16ans",
+    "warning": null,
+    "id": "HO00001967",
+    "genres": ["Horror", "Mysterie", "Thriller"],
+    "duration": 113,
+    "isNew": false,
+    "internalId": 40142,
+    "release": {
+      "NL_NL": "2024-01-01"
+    },
+    "rating": {
+      "ref": "-16ans",
+      "description": "-16 jaar",
+      "extendedDescription": "Jonger dan 16? Dan geen toegang, ook niet onder begeleiding van een volwassene. Ter controle kan om legitimatie worden gevraagd."
+    },
+    "cinechecks": [],
+    "topic": null,
+    "content": null,
+    "published": null,
+    "publicationDate": "2025-09-11T17:54:52+02:00",
+    "urlSlug": null,
+    "originalRelease": null
+  }
+]

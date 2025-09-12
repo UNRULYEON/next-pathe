@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-geist: "Geist", serif;
+  --font-geist-mono: "Geist Mono", sans-serif;
+}
+
+html {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  font-family: var(--font-geist);
+  background-color: var(--color-neutral-950);
+  color: var(--color-neutral-100);
+  user-select: none;
+}
+
+body,
+.root {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+}
+
+.root {
+  isolation: isolate;
+}

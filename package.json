@@ -1,0 +1,33 @@
+{
+  "name": "next-pathe",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "check-types": "turbo run check-types",
+    "biome:check": "turbo run biome:check",
+    "biome:lint": "turbo run biome:lint",
+    "biome:fix": "turbo run biome:fix --write",
+    "docker:dev": "docker compose -p next-pathe-dev -f apps/server/docker/docker-compose.dev.yml up --build",
+    "docker:dev:down": "docker compose -p next-pathe-dev -f apps/server/docker/docker-compose.dev.yml down",
+    "docker:dev:logs": "docker compose -p next-pathe-dev -f apps/server/docker/docker-compose.dev.yml logs -f next-pathe-db",
+    "docker:prod": "docker compose -p next-pathe -f apps/server/docker/docker-compose.prod.yml up -d --build",
+    "docker:prod:down": "docker compose -p next-pathe -f apps/server/docker/docker-compose.prod.yml down",
+    "docker:prod:logs": "docker compose -p next-pathe -f apps/server/docker/docker-compose.prod.yml logs -f next-pathe-prod"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.3",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.6",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "bun@1.2.21",
+  "workspaces": [
+    "apps/*"
+  ]
+}

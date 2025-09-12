@@ -1,0 +1,41 @@
+FROM oven/bun:1.2.21 AS build
+
+WORKDIR /app
+
+COPY package.json ./
+COPY bun.lock ./
+
+COPY apps/server/package.json ./apps/server/package.json
+COPY apps/web/package.json ./apps/web/package.json
+
+RUN bun install
+RUN bun install turbo --global
+
+COPY . .
+
+ENV NODE_ENV=production
+
+RUN bun build \
+	--compile \
+	--minify-whitespace \
+	--minify-syntax \
+	--outfile server \
+	apps/server/src/index.ts
+
+RUN turbo build --filter=@next-pathe/web
+RUN cp -r apps/web/dist/* ./apps/server/public/
+
+FROM gcr.io/distroless/cc-debian12
+
+WORKDIR /app
+
+COPY --from=build /app/server server
+COPY --from=build /app/apps/server/public public
+COPY --from=build /usr/local/bin/bun /usr/local/bin/bun
+COPY apps/server/docker/healthcheck.ts healthcheck.ts
+
+ENV NODE_ENV=production
+
+CMD ["./server"]
+
+EXPOSE 3000

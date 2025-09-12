@@ -1,0 +1,15 @@
+type: environment
+model: environment
+id: ev_TuNt4jT7qc
+workspaceId: wk_cxbiptKuRZ
+createdAt: 2025-09-05T23:17:35.098761
+updatedAt: 2025-09-05T23:27:02.917097
+name: local
+public: true
+base: false
+variables:
+- enabled: true
+  name: BASE_URL
+  value: http://localhost:3000
+  id: R0qgaZM6UY
+color: '#1aff00'

@@ -1,0 +1,26 @@
+type: http_request
+model: http_request
+id: rq_toJ2fvPxgW
+createdAt: 2025-09-11T17:39:39.406200
+updatedAt: 2025-09-11T22:37:54.909694
+workspaceId: wk_cxbiptKuRZ
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers:
+- enabled: true
+  name: Accept-Language
+  value: nl
+  id: XPkKdva0jR
+- enabled: true
+  name: ''
+  value: ''
+  id: FHQrbZs2JF
+method: GET
+name: ''
+sortPriority: -1757114258611.0
+url: http://localhost:3000/api/v1/theaters
+urlParameters: []

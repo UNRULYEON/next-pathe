@@ -1,0 +1,41 @@
+networks:
+  next-pathe-network:
+    name: next-pathe-network
+
+volumes:
+  next-pathe-db-data:
+    name: next-pathe-db-data
+  next-pathe-drizzle-gateway:
+    name: next-pathe-drizzle-gateway
+
+services:
+  drizzle-studio:
+    container_name: drizzle-studio
+    image: ghcr.io/drizzle-team/gateway:latest
+    restart: unless-stopped
+    ports:
+      - "${STUDIO_PORT:-4983}:4983"
+    networks:
+      - next-pathe-network
+    volumes:
+      - next-pathe-drizzle-gateway:/app
+    environment:
+      - PORT=4983
+      - STORE_PATH=/app
+    depends_on:
+      - next-pathe-db
+
+  next-pathe-db:
+    container_name: next-pathe-db
+    image: postgres:16
+    restart: unless-stopped
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    networks:
+      - next-pathe-network
+    volumes:
+      - next-pathe-db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-next_pathe}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}

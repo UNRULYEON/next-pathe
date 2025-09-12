@@ -1,0 +1,14 @@
+type: workspace
+model: workspace
+id: wk_cxbiptKuRZ
+createdAt: 2025-09-05T23:17:31.671162
+updatedAt: 2025-09-05T23:17:31.671163
+authentication: {}
+authenticationType: null
+description: ""
+headers: []
+name: next-pathe
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0

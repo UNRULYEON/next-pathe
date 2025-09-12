@@ -1,0 +1,15 @@
+type: environment
+model: environment
+id: ev_7ZDQTH7gpF
+workspaceId: wk_cxbiptKuRZ
+createdAt: 2025-09-05T23:25:38.404755
+updatedAt: 2025-09-05T23:28:03.819841
+name: production
+public: true
+base: false
+variables:
+- enabled: true
+  name: BASE_URL
+  value: https://next-pathe.app
+  id: hAGvvTKC3P
+color: '#ff0000'
