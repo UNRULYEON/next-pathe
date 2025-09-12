@@ -10,12 +10,15 @@ import { useRef, useState } from "react";
 import { useDebounceValue, useOnClickOutside } from "usehooks-ts";
 import { api } from "@/api";
 import { Button, Input, MovieCard, ScrollArea } from "@/components";
+import { useStore } from "@/store";
 import { cn } from "@/utils";
 
 export const Search = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useDebounceValue(query, 500);
+
+  const selectedMovieSlug = useStore((state) => state.selectedMovieSlug);
 
   const { data, isPending, error } = useQuery({
     queryKey: ["search", debouncedQuery],
@@ -70,6 +73,8 @@ export const Search = () => {
   };
 
   const handleCloseSearch = () => {
+    if (selectedMovieSlug !== undefined) return;
+
     controls.start("hidden");
     setQuery("");
     setDebouncedQuery("");
@@ -188,7 +193,7 @@ export const Search = () => {
             >
               <ScrollArea className="h-full">
                 <div className="grid grid-cols-3 gap-4 pb-8">
-                  {data?.map((show) => (
+                  {data.map((show) => (
                     <MovieCard key={show.id} data={show} />
                   ))}
                 </div>
