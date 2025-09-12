@@ -1,8 +1,8 @@
 import { ClapperboardIcon } from "lucide-react";
 import { Search } from "@/components";
+import { DevtoolsContext } from "@/contexts";
 import { useStore } from "@/store";
 import { cn } from "@/utils";
-import { DevtoolsContext } from "@/contexts";
 
 const App = () => {
   const hasHydrated = useStore((state) => state._hasHydrated);

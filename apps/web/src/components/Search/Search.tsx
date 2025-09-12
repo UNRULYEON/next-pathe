@@ -179,7 +179,13 @@ export const Search = () => {
             </motion.div>
           )}
           {data && (
-            <div key="search-results" className="h-full mt-4 rounded-lg">
+            <motion.div
+              key="search-results"
+              className="h-full mt-4 rounded-lg"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
               <ScrollArea className="h-full">
                 <div className="grid grid-cols-3 gap-4 pb-8">
                   {data?.map((show) => (
@@ -213,7 +219,7 @@ export const Search = () => {
                   ))}
                 </div>
               </ScrollArea>
-            </div>
+            </motion.div>
           )}
         </AnimatePresence>
       </motion.div>

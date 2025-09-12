@@ -29,7 +29,7 @@ services:
       - next-pathe
 
   next-pathe:
-    container_name: next-pathe-prod
+    container_name: next-pathe
     build:
       context: ../../..
       dockerfile: apps/server/docker/Dockerfile.prod
@@ -38,7 +38,7 @@ services:
       - next-pathe-network
     environment:
       - NODE_ENV=production
-      - DATABASE_URL=${DATABASE_URL:-postgresql://postgres:${POSTGRES_PASSWORD}@next-pathe-db-prod:5432/${POSTGRES_DB}}
+      - DATABASE_URL=${DATABASE_URL:-postgresql://postgres:${POSTGRES_PASSWORD}@next-pathe-db:5432/${POSTGRES_DB}}
     depends_on:
       - next-pathe-db
     healthcheck:
@@ -49,7 +49,7 @@ services:
       start_period: 60s
 
   next-pathe-db:
-    container_name: next-pathe-db-prod
+    container_name: next-pathe-db
     image: postgres:16
     restart: unless-stopped
     networks:

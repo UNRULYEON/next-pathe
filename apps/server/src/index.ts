@@ -1,7 +1,7 @@
 import { cors } from "@elysiajs/cors";
 import { openapi } from "@elysiajs/openapi";
 import { staticPlugin } from "@elysiajs/static";
-import { Elysia, file } from "elysia";
+import { Elysia } from "elysia";
 import { health, search, theaters } from "./modules";
 
 const v1 = new Elysia({
