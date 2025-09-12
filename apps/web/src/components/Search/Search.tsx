@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { ClapperboardIcon, FilmIcon, LoaderCircleIcon } from "lucide-react";
+import { FilmIcon, LoaderCircleIcon } from "lucide-react";
 import {
   AnimatePresence,
   motion,
@@ -9,7 +9,7 @@ import {
 import { useRef, useState } from "react";
 import { useDebounceValue, useOnClickOutside } from "usehooks-ts";
 import { api } from "@/api";
-import { AspectRatio, Button, Input, ScrollArea } from "@/components";
+import { Button, Input, MovieCard, ScrollArea } from "@/components";
 import { cn } from "@/utils";
 
 export const Search = () => {
@@ -60,7 +60,7 @@ export const Search = () => {
     const value = event.target.value;
 
     setQuery(value);
-    setDebouncedQuery(value);
+    setDebouncedQuery(value.trim());
 
     if (value.length > 0) {
       controls.start("shown");
@@ -189,33 +189,7 @@ export const Search = () => {
               <ScrollArea className="h-full">
                 <div className="grid grid-cols-3 gap-4 pb-8">
                   {data?.map((show) => (
-                    <motion.div
-                      key={show.id}
-                      className="flex flex-col gap-2"
-                      whileTap={{ scale: 0.98 }}
-                      transition={{ duration: 0.1 }}
-                    >
-                      <AspectRatio
-                        ratio={9 / 12}
-                        className="relative border-[1px] border-neutral-800 rounded-lg overflow-clip"
-                      >
-                        <div className="absolute flex items-center justify-center  bg-neutral-900 w-full h-full">
-                          <ClapperboardIcon className="size-14 text-neutral-800" />
-                        </div>
-                        {show.poster?.md && (
-                          <img
-                            src={show.poster.md}
-                            className="absolute object-cover"
-                            alt={show.title}
-                          />
-                        )}
-                      </AspectRatio>
-                      <div>
-                        <div className="text-neutral-200 text-sm">
-                          {show.title}
-                        </div>
-                      </div>
-                    </motion.div>
+                    <MovieCard key={show.id} data={show} />
                   ))}
                 </div>
               </ScrollArea>
