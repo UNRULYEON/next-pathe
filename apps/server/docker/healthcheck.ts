@@ -1,5 +1,5 @@
 try {
-  const response = await fetch("http://localhost:3000/v1/health");
+  const response = await fetch("http://localhost:3000/api/v1/health");
   if (response.ok) {
     process.exit(0);
   } else {

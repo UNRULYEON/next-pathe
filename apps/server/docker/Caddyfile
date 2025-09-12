@@ -1,0 +1,3 @@
+next-pathe.app {
+  reverse_proxy next-pathe:3000
+}

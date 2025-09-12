@@ -39,7 +39,8 @@ const v1 = new Elysia({
 const app = new Elysia()
   .use(
     cors({
-      origin: "*",
+      origin:
+        process.env.NODE_ENV === "development" ? "*" : "https://next-pathe.app",
       methods: ["GET"],
       allowedHeaders: [
         "Accept",

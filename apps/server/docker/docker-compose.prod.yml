@@ -5,16 +5,35 @@ networks:
 volumes:
   next-pathe-db-data:
     name: next-pathe-db-data
+  caddy-data:
+    name: caddy-data
+  caddy-config:
+    name: caddy-config
 
 services:
+  caddy:
+    container_name: next-pathe-caddy
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy-data:/data
+      - caddy-config:/config
+    networks:
+      - next-pathe-network
+    depends_on:
+      - next-pathe
+
   next-pathe:
     container_name: next-pathe-prod
     build:
       context: ../../..
       dockerfile: apps/server/docker/Dockerfile.prod
     restart: unless-stopped
-    ports:
-      - "${API_PORT:-3000}:3000"
     networks:
       - next-pathe-network
     environment:
@@ -33,8 +52,6 @@ services:
     container_name: next-pathe-db-prod
     image: postgres:16
     restart: unless-stopped
-    ports:
-      - "${DB_PORT:-5432}:5432"
     networks:
       - next-pathe-network
     volumes:

@@ -12,10 +12,10 @@
     "biome:fix": "turbo run biome:fix --write",
     "docker:dev": "docker compose -p next-pathe-dev -f apps/server/docker/docker-compose.dev.yml up --build",
     "docker:dev:down": "docker compose -p next-pathe-dev -f apps/server/docker/docker-compose.dev.yml down",
-    "docker:dev:logs": "docker compose -p next-pathe-dev -f apps/server/docker/docker-compose.dev.yml logs -f next-pathe-db",
+    "docker:dev:logs": "docker compose -p next-pathe-dev -f apps/server/docker/docker-compose.dev.yml logs",
     "docker:prod": "docker compose -p next-pathe -f apps/server/docker/docker-compose.prod.yml up -d --build",
     "docker:prod:down": "docker compose -p next-pathe -f apps/server/docker/docker-compose.prod.yml down",
-    "docker:prod:logs": "docker compose -p next-pathe -f apps/server/docker/docker-compose.prod.yml logs -f next-pathe-prod"
+    "docker:prod:logs": "docker compose -p next-pathe -f apps/server/docker/docker-compose.prod.yml logs"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.3",
