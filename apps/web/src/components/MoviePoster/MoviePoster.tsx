@@ -1,14 +1,16 @@
 import { ClapperboardIcon } from "lucide-react";
 import { motion, useAnimationControls, type Variants } from "motion/react";
 import { AspectRatio } from "@/components";
+import { cn } from "@/utils";
 
 type MoviePosterProps = {
   id: string;
   src: string | null;
   alt: string;
+  className?: string;
 };
 
-export const MoviePoster = ({ id, src, alt }: MoviePosterProps) => {
+export const MoviePoster = ({ id, src, alt, className }: MoviePosterProps) => {
   const controls = useAnimationControls();
   const posterVariants: Variants = {
     hidden: {
@@ -23,7 +25,7 @@ export const MoviePoster = ({ id, src, alt }: MoviePosterProps) => {
     <AspectRatio
       key={id}
       ratio={9 / 12}
-      className="relative rounded-xl overflow-clip"
+      className={cn("relative rounded-xl overflow-clip", className)}
     >
       <div className="absolute flex items-center justify-center  bg-neutral-900 w-full h-full">
         <ClapperboardIcon className="size-14 text-neutral-800" />

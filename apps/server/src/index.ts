@@ -2,7 +2,7 @@ import { cors } from "@elysiajs/cors";
 import { openapi } from "@elysiajs/openapi";
 import { staticPlugin } from "@elysiajs/static";
 import { Elysia } from "elysia";
-import { health, search, theaters } from "./modules";
+import { health, movies, search, theaters } from "./modules";
 
 const v1 = new Elysia({
   prefix: "/api/v1",
@@ -34,6 +34,7 @@ const v1 = new Elysia({
   )
   .use(health)
   .use(search)
+  .use(movies)
   .use(theaters);
 
 const app = new Elysia()

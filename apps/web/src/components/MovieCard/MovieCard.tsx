@@ -10,7 +10,7 @@ type MovieCardProps = {
 export const MovieCard = ({ data }: MovieCardProps) => {
   const setSelectedMovieSlug = useStore((state) => state.setSelectedMovieSlug);
 
-  const handleOnTap = () => {
+  const handleOnClick = () => {
     setSelectedMovieSlug(data.slug);
   };
 
@@ -20,7 +20,7 @@ export const MovieCard = ({ data }: MovieCardProps) => {
       className="flex flex-col gap-2 hover:cursor-pointer"
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.1 }}
-      onTap={handleOnTap}
+      onClick={handleOnClick}
     >
       <MoviePoster
         id={data.id}

@@ -16,11 +16,12 @@ export const Button = ({
   return (
     <motion.button
       className={cn(
-        "flex items-center",
+        "flex items-center justify-center",
         "px-4 h-9 rounded-xl",
         "cursor-pointer",
         "text-base font-medium",
         "transition-all",
+        "whitespace-nowrap",
         variant === "primary" && [
           "bg-neutral-100",
           "text-neutral-900",

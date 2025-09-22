@@ -26,3 +26,8 @@ body,
 .root {
   isolation: isolate;
 }
+
+number-flow-react::part(suffix) {
+  margin-left: 0.3rem;
+  font-weight: normal;
+}
